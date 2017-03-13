@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "library(shinydashboard)\nlibrary(shiny)\nlibrary(DT)\nlibrary(plotly)\nlibrary(markdown)\nlibrary(httr)\nlibrary(devtools)\n\nlibrary(twitteR)\n\nlibrary(ggmap)\nlibrary(maps)\nlibrary(ggplot2)\nlibrary(NbClust)\nlibrary(httr)\nlibrary(devtools)\n\n\nshinyUI(fluidPage(\n  \n  navbarPage(\"Clustering Visz. on World using Twitter\",\n             sidebarLayout(\n               sidebarPanel(\n                 \n                 radioButtons('sep', 'Want to use default Keys or new keys for Twitter',\n                              c(DEFAULT ='default',\n                                NEW ='new'),\n                              'default'),\n                 \n                 uiOutput(\"mm\"),\n                 \n                 textInput(\"usernam\", \"Enter the username\" , value = \"oneplus\"),\n                 numericInput(\"ab\", \n                              label = \"How many followers you want to show on Graph\",  \n                              value = 15, max = 6000),\n                 hr()\n                 \n               ),\n               \n               hr()\n               \n               \n             ),\n             mainPanel( \n               plotOutput(\"marks\")\n             )\n  )\n)\n)",
+    "created" : 1486206187116.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "4125796324",
+    "id" : "227BD671",
+    "lastKnownWriteTime" : 1486205697,
+    "last_content_update" : 1486205697,
+    "path" : "~/WIP/ui.R",
+    "project_path" : "ui.R",
+    "properties" : {
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
