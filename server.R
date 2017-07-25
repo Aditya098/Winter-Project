@@ -14,10 +14,10 @@ shinyServer(function(input, output, session) {
     output$plot1 <- renderPlot({
     
       options(httr_oauth_cache=T)
-      api_key <- "9OWlp1fFQMfhRGMdoe1bT5wq2"
-      api_secret <- "kdCmc7PD5SrhhkoJ1UeRvuzQrYgc6DY9lGyA6TZpU1hatBYLkE"
-      token <- "4717263320-k3AbCBOFipWG8DiChZVSlmw3ODMKMCNGXagzQsx"
-      token_secret <- "Zr67eFdorrDZxoUq8Ec8KuSk75yK8zwqfooOf3fbxB9LG"
+      api_key <- "xxxxxxxxxxxxxxxxx"
+      api_secret <- "kdCmc7PD5Srxxxxxxxxxxxxxx"
+      token <- "4717263320-k3Abxxxxxxxxxxxxxxxxxxxx"
+      token_secret <- "Zr67eFdorrDxxxxxxxxxxxxxxxxx"
       
     # Create Twitter Connection
     options(httr_oauth_cache=T)
